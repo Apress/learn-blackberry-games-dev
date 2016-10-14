@@ -1,0 +1,12 @@
+TWEETSPACE_CANCEL#0="Cancel";
+TWEETSPACE_LISTNAME#0="en01";
+TWEETSPACE_LOGIN#0="Log In";
+TWEETSPACE_LOGIN_ERROR#0="\nLogin Error, please give valid credentials.\n";
+TWEETSPACE_OK#0="OK";
+TWEETSPACE_PASSWORD#0="password: ";
+TWEETSPACE_SIGNIN#0="Twitter Login";
+TWEETSPACE_TWEETSPACE#0="Tweet Space!";
+TWEETSPACE_UPD_LOGIN#0="Update Login";
+TWEETSPACE_USERNAME#0="username: ";
+TWEETSPACE_WARNING#0="** You must create a Twitter account for this game (see: http://twitter.com). This game frequently tweets your spaceship location, so don't just use your everyday Twitter account. **";
+

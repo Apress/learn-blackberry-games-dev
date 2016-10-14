@@ -1,0 +1,62 @@
+## RIM Java Development Environment
+# RIM Project file
+#
+# This file is generated and managed by BlackBerry developer tools.
+# It SHOULD NOT BE modified manually.
+#
+AddOn=0
+AlwaysBuild=0
+[AlxImports
+]
+AutoRestart=0
+[ClassProtection
+]
+[CustomBuildFiles
+]
+[CustomBuildRules
+]
+[DefFiles
+]
+[DependsOn
+]
+ExcludeFromBuildAll=0
+[Files
+FHClient.java
+fox.png
+GPSLocator.java
+IDScreen.java
+images\dogAlive.png
+images\dogDead.png
+images\foxAlive.png
+images\foxDead.png
+images\IDTitleBar.png
+images\title.png
+ImageScreen.java
+KillPopupScreen.java
+LocUpdater.java
+PlayerLoc.java
+Utils.java
+]
+HaveAlxImports=0
+HaveDefs=0
+HaveImports=0
+[Icons
+fox.png
+]
+[ImplicitRules
+]
+[Imports
+]
+Listing=0
+Options=-quiet 
+OutputFileName=FHClient
+[PackageProtection
+]
+RibbonPosition=0
+[RolloverIcons
+]
+RunOnStartup=0
+StartupTier=7
+SystemModule=0
+Title=Fox and Hounds Client
+Type=0

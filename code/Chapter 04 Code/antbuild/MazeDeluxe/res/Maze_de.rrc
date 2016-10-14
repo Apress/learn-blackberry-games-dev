@@ -1,0 +1,6 @@
+MAZE_COLWIDTH#0="Spaltenbreite";
+MAZE_CONGRATS#0="Glückwünsche!";
+MAZE_GOODBYE#0="Tschüss!";
+MAZE_NEWMAZE#0="Neues Labyrinth";
+MAZE_NUMCOLS#0="Wie viele Spalten?";
+MAZE_SELECTSIZE#0="Dimensionen";

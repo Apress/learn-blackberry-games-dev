@@ -1,0 +1,116 @@
+<project default="deliver">
+
+    <!-- set the project and platform properties to defaults -->
+    <property name="project.name" value="MazeDeluxe"/>
+    <property file="models\7290.properties"/>
+    <!-- the app.type property is used by the build task to indicate -->
+    <!-- whether the application is a MIDlet or a RIMlet. -->
+    <!-- The value "cldc" indicates a RIMlet. -->
+    <property name="app.type" value="cldc"/>
+
+    <!-- set the configuration -->
+    <!-- these values should be changed to match your local dev environment -->
+    <property name="jde.home" 
+        value="C:\Program Files\Research In Motion\BlackBerry JDE ${rim.version}"
+    />
+    <property name="build.root" value="C:\Carol\book\code\chapter04\antbuild" />
+    <property name="project.root" value="${build.root}\${project.name}" />
+
+    <!-- tell ant where to find the bb-ant-tools.jar -->
+    <taskdef resource="bb-ant-defs.xml"
+        classpath="C:\Carol\apache-ant-1.7.1\lib\bb-ant-tools.jar"/>
+
+    <target name="clean">
+        <!-- delete all files created by the build process -->
+        <delete dir="${project.root}\build"/>
+        <delete file="${jde.home}\simulator\${project.name}_${model}.cod"/>
+    </target>
+
+    <target name="clean-simulator">
+        <!-- run the cleaning script provided with the simulator -->
+        <!-- sets the simulator back to its initial state -->
+        <exec executable="${jde.home}\simulator\clean.bat"
+                dir="${jde.home}\simulator"
+        />
+        <!-- delete the application and its data from the simulator's memory -->
+        <exec executable="${jde.home}\simulator\fledge.exe" 
+                dir="${build.root}\simulator-data">
+            <arg value="/app=${jde.home}\simulator\Jvm.dll"/>
+            <arg value="/handheld=${model}"/>
+            <arg value="/clear-flash"/>
+            <arg value="/shutdown-after-startup"/>
+        </exec>
+   </target>
+
+    <target name="setup">
+        <!-- create a build directory to hold exactly the source -->
+        <!-- and resource files for the selected device model -->
+        <echo message="creating ${project.root}\build\res"/>
+        <mkdir dir="${project.root}\build\img"/>
+        <mkdir dir="${project.root}\build\res"/>
+        <mkdir dir="${project.root}\build\src"/>
+        <mkdir dir="${project.root}\build\${project.name}"/>
+        <copy todir="${project.root}\build\src">
+            <fileset dir="${project.root}\src"/>
+        </copy>
+        <copy file="${project.root}\icon\${project.name}_icon_${size.icon}.png"
+              tofile="${project.root}\build\img\${project.name}_icon.png"
+        />
+        <copy todir="${project.root}\build\img">
+            <fileset dir="${project.root}\img\${size.screen}"/>
+        </copy>
+        <copy todir="${project.root}\build\res">
+            <fileset dir="${project.root}\res"/>
+        </copy>
+    </target>
+
+    <target name="build" depends="setup">
+        <rapc destdir="${project.root}\build\${project.name}" 
+              output="${project.name}"
+              srcdir="${project.root}\build">
+            <jdp type="${app.type}"
+                 title="${project.name}"
+                 icon="../img/${project.name}_icon.png"
+            />
+            <define tag="RIM_${rim.version}"/>
+            <define tag="SCREEN_${size.screen}"/>
+        </rapc>
+    </target>
+
+   <target name="deliver" depends="clean, build">
+        <copy file="${project.root}\build\${project.name}\${project.name}.cod"
+            tofile="${jde.home}\simulator\${project.name}_${model}.cod"
+        />
+        <copy file="${project.root}\build\${project.name}\${project.name}.cod"
+            tofile="${build.root}\delivery\${project.name}_${model}.cod"
+        />
+        <delete dir="${project.root}\build"/>
+    </target>
+
+    <target name="run">
+        <!-- run the application on the simulator -->
+        <mkdir dir="${build.root}\simulator-data"/>
+        <exec executable="${jde.home}\simulator\fledge.exe" 
+                dir="${build.root}\simulator-data"
+                output="${build.root}\simulator-data\${project.name}-log.txt">
+            <arg value="/app=${jde.home}\simulator\Jvm.dll"/>
+            <arg value="/handheld=${model}"/>
+            <arg value="/app-param=DisableRegistration"/>
+            <arg value="/app-param=JvmAlxConfigFile:${model}.xml"/>
+            <arg value="/pin=0x2100000A"/>
+            <!-- without this line the app is saved in the simulator's flash -->
+            <!-- <arg value="/no-save-flash"/> -->
+        </exec>
+    </target>
+
+   <target name="load">
+        <!-- install the application onto a BlackBerry device -->
+        <!-- connected to the USB port -->
+        <exec executable="${jde.home}\bin\JavaLoader.exe">
+            <arg value="-u"/>
+            <arg value="load"/>
+            <arg value="${build.root}\delivery\${project.name}_${model}.cod"/>
+        </exec>
+    </target>
+
+</project>

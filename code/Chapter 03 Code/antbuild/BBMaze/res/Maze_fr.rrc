@@ -1,0 +1,6 @@
+MAZE_COLWIDTH#0="Largeur des colonnes";
+MAZE_CONGRATS#0="Félicitations !";
+MAZE_GOODBYE#0="Au revoir !";
+MAZE_NEWMAZE#0="Nouveau labyrinthe";
+MAZE_NUMCOLS#0="Combien de colonnes ?";
+MAZE_SELECTSIZE#0="choisir les dimensions";

@@ -1,0 +1,5 @@
+package net.frogparrot.hello;
+
+originalLocale en;
+
+HELLOBB_SAYHELLO#0=1;

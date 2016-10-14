@@ -1,0 +1,6 @@
+MAZE_COLWIDTH#0="Column Width";
+MAZE_CONGRATS#0="Great Job!";
+MAZE_GOODBYE#0="Bye!";
+MAZE_NEWMAZE#0="New Maze";
+MAZE_NUMCOLS#0="Number of Columns";
+MAZE_SELECTSIZE#0="Select Size";

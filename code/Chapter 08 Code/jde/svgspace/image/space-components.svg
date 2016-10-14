@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created manually by Carol Hamer (with some assistance from Inkscape to generate paths) -->
+<svg width="240" height="320" viewBox="-240 -320 480 640" stroke-miterlimit="2" 
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xml:space="preserve" version="1.1" baseProfile="tiny">
+  <defs>
+    <g id="mainhull">
+      <!-- the basic shape of the outer hull of both the rocket and its engines -->
+      <path fill="#666666" stroke="#000000"  
+         d="M 102.94913,233.23945 
+            C 92.641524,327.40192 128.53432,437.75419 154.6246,540.01215 
+            C 178.17206,550.92937 197.5947,557.08734 226.0811,556.61989 
+            C 251.382,557.11835 274.03246,549.86652 297.16791,540.01215 
+            C 323.25819,437.75419 356.8766,336.10688 348.84338,233.23945 
+            C 340.81015,130.37202 284.27986,89.162454 226.07577,37.878232 
+            C 158.44358,89.245831 113.25675,139.07699 102.94913,233.23945 z"
+         />
+      <path fill="#bbbbbb" stroke="#000000"
+         d="M 153.99244,233.93746 
+            C 152.89743,308.1412 174.55661,455.16902 188.50074,552.6608 
+            C 199.86064,555.50651 211.8379,556.92914 226.0811,556.69541 
+            C 251.382,557.19387 274.03246,549.94205 297.16791,540.08768 
+            C 323.25819,437.82971 356.8766,336.18241 348.84338,233.31498 
+            C 340.81015,130.44755 284.27986,89.237979 226.07577,37.953751 
+            C 178.36292,81.851599 155.1058,158.48903 153.99244,233.93746 z"
+         />
+     </g>
+     <!-- the flames coming out of the engine are defined separately -->
+     <!-- because they move independently -->
+     <g id="flame1">
+       <path fill="#de422d" stroke="#000000"  
+          d="M 44.285715,0.93361156
+             C 34.850224,2.1830519 21.583854,5.9982466 14.285715,14.50504
+             C 6.9875754,23.011833 5.382605,35.920611 7.142857,50.219325
+             C 8.903109,64.518038 7.1428573,73.790751 7.1428573,73.790751
+             C 7.1428573,73.790751 21.153463,53.520997 35,54.50504
+             C 48.846537,55.489083 47.857144,178.79075 47.857144,178.79075
+             C 47.857144,178.79075 48.276474,87.742027 65.714286,82.362182
+             C 83.152098,76.982337 91.428577,153.79076 88.571427,142.36218
+             C 85.714287,130.93361 87.029909,74.942848 92.857143,60.933611
+             C 98.938578,46.313251 101.27236,36.504612 98.571429,28.076468
+             C 95.870503,19.648324 87.807944,6.993361 80.714286,4.5050398
+             C 73.620628,2.0167188 53.721206,-0.31582874 44.285715,0.93361156 z"
+         />
+     </g>
+     <g id="flame2">
+       <path fill="#f36a1b" stroke="#000000"  
+          d="M 44.285715,7.362183
+             C 34.850224,8.6116233 23.012425,12.426818 15.714286,20.933611
+             C 8.4161468,29.440404 10.382605,38.777754 12.142857,53.076468
+             C 13.903109,67.375181 22.857143,112.36218 22.857143,112.36218
+             C 22.857143,112.36218 15.439177,64.949568 29.285714,65.933611
+             C 43.132251,66.917654 57.142858,129.50504 57.142858,129.50504
+             C 57.142858,129.50504 48.276474,80.59917 65.714286,75.219325
+             C 83.152098,69.83948 114.28572,135.21933 111.42857,123.79075
+             C 108.57143,112.36218 84.887052,76.371419 82.857143,60.933611
+             C 80.827234,45.495803 91.272355,35.076041 88.571429,26.647897
+             C 85.870503,18.219753 78.52223,11.993361 71.428572,9.5050398
+             C 64.334914,7.0167188 53.721206,6.1127427 44.285715,7.362183 z"
+         />
+     </g>
+     <g id="flame3">
+       <path fill="#f3db1b" stroke="#000000"  
+          d="M 34.908948,15.842559
+             C 24.536318,22.871778 23.862981,20.556401 19.194662,33.335491
+             C 14.416814,46.414407 5.0000001,130.93361 5.0000001,130.93361
+             C 5.0000001,130.93361 15.439177,64.949568 29.285714,65.933611
+             C 43.132251,66.917654 36.428572,102.36218 36.428572,102.36218
+             C 36.428572,102.36218 48.276474,72.742027 65.714286,67.362182
+             C 83.152098,61.982337 81.43842,79.824223 82.142856,88.076464
+             C 88.839253,67.034613 71.969434,52.101962 71.313274,32.362183
+             C 70.657115,12.622404 45.281577,8.8133395 34.908948,15.842559 z"
+         />
+     </g>
+     <g id="star">
+        <path fill="#ffffff" d="M 1,1 L -1,1 L -1,-1 L 1,-1 z"/>
+     </g>
+  </defs>
+  <g id="whole-scene">
+    <g id="background" transform="translate(-240, -320)">
+      <!-- paint the entire background black -->
+      <rect x="-240" y="0" width="960" height="640" fill="#000000"/>
+      <!-- paint on a field of fainter background stars -->
+      <!-- spaced to fill the viewBox -->
+      <g id="stars-1">
+        <use xlink:href="#star" transform="translate(50 50)"/>
+        <use xlink:href="#star" transform="translate(5 600)"/>
+        <use xlink:href="#star" transform="translate(68 346)"/>
+        <use xlink:href="#star" transform="translate(456 500)"/>
+        <use xlink:href="#star" transform="translate(333 111)"/>
+        <use xlink:href="#star" transform="translate(351 253)"/>
+        <use xlink:href="#star" transform="translate(400 98)"/>
+        <use xlink:href="#star" transform="translate(111 333)"/>
+        <use xlink:href="#star" transform="translate(120 437)"/>
+        <use xlink:href="#star" transform="translate(298 267)"/>
+        <use xlink:href="#star" transform="translate(12 185)"/>
+        <use xlink:href="#star" transform="translate(283 573)"/>
+        <use xlink:href="#star" transform="translate(366 44)"/>
+        <use xlink:href="#star" transform="translate(50 555)"/>
+        <!-- paint some on the edges -->
+        <use xlink:href="#star" transform="translate(-235 140)"/>
+        <use xlink:href="#star" transform="translate(560 50)"/>
+        <use xlink:href="#star" transform="translate(680 427)"/>
+        <use xlink:href="#star" transform="translate(703 505)"/>
+        <use xlink:href="#star" transform="translate(-56 112)"/>
+        <use xlink:href="#star" transform="translate(-22 429)"/>
+        <use xlink:href="#star" transform="translate(-107 1)"/>
+        <use xlink:href="#star" transform="translate(619 589)"/>
+        <use xlink:href="#star" transform="translate(495 490)"/>
+        <use xlink:href="#star" transform="translate(522 630)"/>
+        <use xlink:href="#star" transform="translate(-99 15)"/>
+        <use xlink:href="#star" transform="translate(-201 253)"/>
+        <use xlink:href="#star" transform="translate(715 147)"/>
+        <use xlink:href="#star" transform="translate(555 333)"/>
+      </g>
+      <!-- paint on a field of foreground stars (scaled to be larger) -->
+      <!-- you might potentially add a motion animation to this set -->
+      <!-- spaced to fill the viewBox after scaling -->
+      <g id="stars-2" transform="scale(2)">
+        <use xlink:href="#star" transform="translate(50 50)"/>
+        <use xlink:href="#star" transform="translate(5 100)"/>
+        <use xlink:href="#star" transform="translate(68 306)"/>
+        <use xlink:href="#star" transform="translate(156 200)"/>
+        <use xlink:href="#star" transform="translate(33 111)"/>
+        <use xlink:href="#star" transform="translate(51 253)"/>
+        <use xlink:href="#star" transform="translate(30 98)"/>
+        <use xlink:href="#star" transform="translate(111 233)"/>
+        <use xlink:href="#star" transform="translate(120 37)"/>
+        <use xlink:href="#star" transform="translate(208 267)"/>
+        <use xlink:href="#star" transform="translate(12 185)"/>
+        <use xlink:href="#star" transform="translate(223 73)"/>
+        <use xlink:href="#star" transform="translate(6 44)"/>
+        <use xlink:href="#star" transform="translate(50 155)"/>
+      </g>
+    </g>
+    <g id="spaceship" transform="scale(.25)">
+      <!-- center the spaceship -->
+      <g transform="translate(-226, -477)">
+        <!-- two of the four rocket engines are behind the main hull -->
+        <g id="nacelle-3">
+          <!-- the engines are just the same shape as the hull, scaled by half -->
+          <g transform="scale(.5)">
+            <g transform="translate(-226.07577 -37.878232 )">
+              <use xlink:href="#mainhull"/>
+            </g>
+          </g>
+          <!-- the flame is translated into position below the engine -->
+          <!-- after the distorting animations are performed. -->
+          <g id="flames-3" transform="translate(-45 260)">
+            <!-- each flame layer is animated individually -->
+            <g>
+              <use xlink:href="#flame1"/>
+              <animateTransform attributeName="transform" type="skewX" 
+                   values="0;20;-45;0" keyTimes="0;0.33;0.66;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+            <g>
+              <use xlink:href="#flame2"/>
+              <animateTransform attributeName="transform" type="scale" 
+                   values="1,1;1.5,0.75;1,1.75;2,2;1,1"
+                   keyTimes="0;0.25;0.5;0.75;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+            <g>
+              <use xlink:href="#flame3"/>
+              <animateTransform attributeName="transform" type="skewY" 
+                   values="0;60;15;20;0" keyTimes="0;0.25;0.5;0.75;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+          </g>
+          <g id="bar-3">
+            <!-- the bar holding the engine to the hull is a quadrilateral -->
+            <!-- which is scaled in the X-direction so that it appears to turn -->
+            <path d="M 110,0 L 125,50 L 55,75 L 50,50 z"
+                fill="#bbbbbb" stroke="#000000" />
+            <animateTransform attributeName="transform" type="scale"
+                from="1,1" to="0.05,1" dur="1s" fill="freeze" repeatCount="indefinite"/>
+          </g>
+          <!-- the entire engine (including bar and flame) follows -->
+          <!-- an elliptical path around the main hull -->
+          <animateMotion 
+              path="M 14.529648,420.32217
+                   C 14.529648,388.81358 108.91429,363.24139 225.20966,363.24139"
+              dur="1s" fill="freeze" repeatCount="indefinite"/>
+         </g>
+         <g id="nacelle-4">
+           <g transform="scale(.5)">
+             <g transform="translate(-226.07577 -37.878232 )">
+               <use xlink:href="#mainhull"/>
+             </g>
+           </g>
+           <g id="flames-4" transform="translate(-45 260)">
+             <g>
+               <use xlink:href="#flame1"/>
+               <animateTransform attributeName="transform" type="skewY" 
+                   values="0;60;15;20;0" keyTimes="0;0.25;0.5;0.75;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+             </g>
+             <g>
+               <use xlink:href="#flame2"/>
+               <animateTransform attributeName="transform" type="scale" 
+                   values="1,1;1.5,0.75;1,1.75;1,1" keyTimes="0;0.33;0.66;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+             </g>
+             <g>
+               <use xlink:href="#flame3"/>
+               <animateTransform attributeName="transform" type="skewX" 
+                   values="0;60;-20;45;0" keyTimes="0;0.25;0.5;0.75;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+             </g>
+          </g>
+          <g id="bar-4">
+            <path d="M -108,0 L -123,50 L -55,75 L -50,50 z"
+               fill="#666666" stroke="#000000" />
+            <animateTransform attributeName="transform" type="scale"
+               from="0.05,1" to="1,1" dur="1s" fill="freeze" repeatCount="indefinite"/>
+          </g>
+          <animateMotion
+             path="M 225.20966,363.24139
+                   C 338.591,363.24139 435.74974,388.50383 435.80808,419.19913"
+             dur="1s" fill="freeze" repeatCount="indefinite"/>
+        </g>
+        <g id="hull">
+          <!-- the main hull itself doesn't have any separate animation -->
+          <use xlink:href="#mainhull"/>
+        </g>
+        <g id="window">
+          <!-- the window is two concentric ellipses -->
+          <g>
+            <path fill="#666666" stroke="#000000"  
+              d="M 52.342524,249.14996
+                 C 52.342524,285.47603 28.437894,314.95808 -1.016016,314.95808
+                 C -30.469926,314.95808 -54.374546,285.47603 -54.374546,249.14996
+                 C -54.374546,212.82387 -30.469926,183.34183 -1.016016,183.34183
+                 C 28.357674,183.34183 52.216364,212.64161 52.342034,248.86842"
+              />
+            <!-- the window pane is grouped separately because it has a transformation -->
+            <!-- it darkens as the window turns towards the shadow -->
+            <g id="pane">
+              <path d="M 41.468204,249.92805
+                      C 41.468204,279.47839 22.504994,303.46127 -0.860386,303.46127
+                      C -24.225766,303.46127 -43.188976,279.47839 -43.188976,249.92805
+                      C -43.188976,220.37771 -24.225766,196.39483 -0.860386,196.39483
+                      C 22.441354,196.39483 41.368124,220.22944 41.467814,249.69903"
+                />
+              <animateColor attributeName="fill" values="#ffffff;#ffffff;#666666"
+                 keyTimes="0;0.5;1" dur="1s" fill="freeze" repeatCount="indefinite"/>
+            </g>
+            <!-- the motion and width scaling are computed according to a spline -->
+            <!-- to give the illusin of a circular path -->
+            <animateTransform attributeName="transform" type="scale"
+                values="0.05,1;1,1;0.05,1" calcMode="spline"
+                keySplines="0 .75 .25 1; .75 0 1 .25"
+                dur="1s" fill="freeze" repeatCount="indefinite"/>
+          </g>
+          <animateMotion path="M 350,0 L 225,0 L 100,0"
+              calcMode="spline" keySplines="0 .1 .9 1; .1 0 1 .9"
+              dur="1s" fill="freeze" repeatCount="indefinite"/>
+        </g>
+        <g id="nacelle-1">
+          <!-- for the front engines the bar is drawn first -->
+          <!-- because it appears behind the engine -->
+          <g id="bar-1">
+            <path fill="#666666" stroke="#000000"
+                 d="M -108,0 L -123,50 L -55,75 L -50,50 z" />
+            <animateTransform attributeName="transform" type="scale" from="1,1"
+                 to="0.05,1" dur="1s" fill="freeze" repeatCount="indefinite"/>
+          </g>
+          <g transform="scale(.5)">
+            <g transform="translate(-226.07577 -37.878232 )">
+              <use xlink:href="#mainhull"/>
+            </g>
+          </g>
+          <g id="flames-1" transform="translate(-45 260)">
+            <g>
+              <use xlink:href="#flame1"/>
+              <animateTransform attributeName="transform" type="skewY" 
+                   values="0;60;15;0" keyTimes="0;0.33;0.66;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+            <g>
+              <use xlink:href="#flame2"/>
+              <animateTransform attributeName="transform" type="skewX" 
+                   values="0;-30;20;45;0" keyTimes="0;0.25;0.5;0.75;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+            <g>
+              <use xlink:href="#flame3"/>
+              <animateTransform attributeName="transform" type="scale" 
+                   values="1,1;1,1.75;2,0.75;1,1" keyTimes="0;0.33;0.66;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+          </g>
+          <animateMotion path="M 435.80808,419.19913
+            C 435.80808,450.70773 341.50502,477.40296 225.20966,477.40296"
+            dur="1s" fill="freeze" repeatCount="indefinite"/>
+        </g>
+        <g id="nacelle-2">
+          <g id="bar-2">
+            <path d="M 110,0 L 125,50 L 55,75 L 50,50 z"
+                 fill="#bbbbbb" stroke="#000000" />
+            <animateTransform attributeName="transform" type="scale" from="0.05,1"
+                 to="1,1" dur="1s" fill="freeze" repeatCount="indefinite"/>
+          </g>
+          <g transform="scale(.5)">
+            <g transform="translate(-226.07577 -37.878232 )">
+              <use xlink:href="#mainhull"/>
+            </g>
+          </g>
+          <g id="flames-2" transform="translate(-45 260)">
+            <g>
+              <use xlink:href="#flame1"/>
+              <animateTransform attributeName="transform" type="skewX" 
+                   values="0;-60;20;45;0" keyTimes="0;0.25;0.5;0.75;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+            <g>
+              <use xlink:href="#flame2"/>
+              <animateTransform attributeName="transform" type="skewY" 
+                   values="0;60;20;0" keyTimes="0;0.33;0.66;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+            <g>
+              <use xlink:href="#flame3"/>
+              <animateTransform attributeName="transform" type="scale" 
+                   values="1,1;1.5,0.75;1,1.75;2,2;1,1" keyTimes="0;0.25;0.5;0.75;1"
+                   dur="1s" fill="remove" repeatCount="indefinite"/>
+            </g>
+          </g>
+          <animateMotion path="M 225.20966,477.40296
+               C 108.91429,477.40296 14.529648,451.83077 14.529648,420.32217"
+               dur="1s" fill="freeze" repeatCount="indefinite"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

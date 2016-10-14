@@ -1,0 +1,12 @@
+TWEETSPACE_CANCEL#0="Abbrechen";
+TWEETSPACE_LISTNAME#0="de01";
+TWEETSPACE_LOGIN#0="Anmelden";
+TWEETSPACE_LOGIN_ERROR#0="\nLogin Fehler, geben Sie bitte gültige Anmeldeinformationen.\n";
+TWEETSPACE_OK#0="OK";
+TWEETSPACE_PASSWORD#0="Passwort:";
+TWEETSPACE_SIGNIN#0="Twitter Anmelden";
+TWEETSPACE_TWEETSPACE#0="Piep Space!";
+TWEETSPACE_UPD_LOGIN#0="Benutzernamen ändern";
+TWEETSPACE_USERNAME#0="Benutzername:";
+TWEETSPACE_WARNING#0="** Sie müssen einen Twitter-Account für dieses Spiel zu erstellen (siehe: http://twitter.com). Dieses Spiel häufig sendet Ihr Raumschiff Standort via Twitter, so dass es besser ist, ein neues Konto für dieses Spiel schaffen . ** ";
+

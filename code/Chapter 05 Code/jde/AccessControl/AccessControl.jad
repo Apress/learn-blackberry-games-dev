@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: AccessControl
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_crypto_1
+MIDlet-Jar-Size: 12543
+MIDlet-1: ,,
+RIM-COD-Creation-Time: 1254769291
+MIDlet-Jar-URL: AccessControl.jar
+RIM-COD-URL: AccessControl.cod
+RIM-COD-SHA1: a1 aa 63 2c 78 29 99 65 68 82 39 03 71 86 9c c6 a5 f1 12 7d
+RIM-COD-Size: 7864
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: AccessControl
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

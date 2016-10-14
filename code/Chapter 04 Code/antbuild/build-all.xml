@@ -1,0 +1,34 @@
+<project default="build-all">
+
+    <!-- set the project and platform properties to defaults -->
+    <property name="build.root" value="C:\Carol\book\code\chapter04\antbuild" />
+    <property name="project.name" value="MazeDeluxe"/>
+    <property name="app.type" value="cldc"/>
+
+    <target name="clean">
+        <delete dir="${build.root}\delivery"/>
+        <ant antfile="build.xml" target="clean">
+            <property file="models\7290.properties"/>
+        </ant>
+        <ant antfile="build.xml" target="clean">
+            <property file="models\8900.properties"/>
+        </ant>
+        <ant antfile="build.xml" target="clean-simulator">
+            <property name="rim.version" value="4.1.0"/>
+        </ant>
+        <ant antfile="build.xml" target="clean-simulator">
+            <property name="rim.version" value="4.6.1"/>
+        </ant>
+   </target>
+
+    <target name="build-all">
+        <mkdir dir="${build.root}\delivery"/>
+        <ant antfile="build.xml" target="deliver">
+            <property file="models\7290.properties"/>
+        </ant>
+        <ant antfile="build.xml" target="deliver">
+            <property file="models\8900.properties"/>
+        </ant>
+    </target>
+
+</project>

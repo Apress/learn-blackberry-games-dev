@@ -1,0 +1,11 @@
+TWEETSPACE_CANCEL # 0 = "Annulla";
+TWEETSPACE_LISTNAME # 0 = "it01";
+TWEETSPACE_LOGIN # 0 = "Log In";
+TWEETSPACE_LOGIN_ERROR#0="\nErrore di accesso, si prega di fornire le credenziali valide.\n";
+TWEETSPACE_OK # 0 = "OK";
+TWEETSPACE_PASSWORD # 0 = "password:";
+TWEETSPACE_SIGNIN # 0 = "Accedi con Twitter";
+TWEETSPACE_TWEETSPACE # 0 = "Tweet Space!";
+TWEETSPACE_UPD_LOGIN # 0 = "Cambiare il nome utente";
+TWEETSPACE_USERNAME # 0 = "username:";
+TWEETSPACE_WARNING # 0 = "** È necessario creare un account Twitter per questo gioco (vedi: http://twitter.com). Questo gioco manda spesso la posizione spaziale con Twitter, quindi è meglio creare un nuovo account per questo gioco . ** ";

@@ -1,0 +1,1366 @@
+<html>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+</head>
+<body class="body">
+<table width="100%">
+<tr>
+<td><span class="p_name">Package: net.frogparrot.tweetspace</span></td>
+<td class="t_cell"><a href="p_xmi_216_diagram.html">Diagram</a></td>
+<td class="t_cell"><a href="overview.html">Back to overview</a></td>
+</tr>
+</table>
+<p></p><a name="xmi_27"></a><table width="500" cellspacing="1" cellpadding="2" border="0">
+<tr>
+<td class="ClassTableHeader" width="200"><b>Main</b></td>
+<td class="ClassTableHeader" width="150">
+        class
+      </td>
+</tr>
+</table>    
+
+    Inherits from: 
+
+    UiApplication<br>
+
+    Implements: 
+
+    TweetSpaceResResource,  Runnable<br><b>Attributes</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Type</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">theLabels</td>
+<td class="t_cell">ResourceBundle
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">theInstance</td>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_27">Main</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myLoginScreen</td>
+<td class="t_cell"><a href="p_xmi_93.html#xmi_11">LoginScreen</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myTweetReader</td>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_38">TweetReader</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySpaceLayer</td>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_153">SpaceLayer</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myMovie</td>
+<td class="t_cell"><a href="p_xmi_195.html#xmi_151">SvgFieldAnimator</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myInvokeLaterId</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myMovieScreen</td>
+<td class="t_cell">MainScreen
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><b>Operations</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Parameters</td>
+<td class="tableheader">Returns</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">main</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String[]</td>
+<td class="t_cell">args</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getInstance</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_27">Main</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">showOpeningMovie</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">run</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">init</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">createFieldAnimator</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">viewportWidth</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">viewportHeight</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell"><a href="p_xmi_116.html#xmi_133">FieldAnimator</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">pushLoginScreen</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getLoginScreen</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell"><a href="p_xmi_93.html#xmi_11">LoginScreen</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">quit</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">deactivate</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">setMessage</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">message</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">postException</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">Exception</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><br><br><a name="xmi_13"></a><table width="500" cellspacing="1" cellpadding="2" border="0">
+<tr>
+<td class="ClassTableHeader" width="200"><b>SimpleScreen</b></td>
+<td class="ClassTableHeader" width="150">
+        class
+      </td>
+</tr>
+</table>    
+
+    Inherits from: 
+
+    MainScreen<br><b>Attributes</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Type</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">myLoginItem</td>
+<td class="t_cell">MenuItem
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+</table><b>Operations</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Parameters</td>
+<td class="tableheader">Returns</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">makeMenu</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">Menu</td>
+<td class="t_cell">menu</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">instance</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">protected</td>
+</tr>
+<tr>
+<td class="t_cell">SimpleScreen</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell"><a href="p_xmi_116.html#xmi_47">TwoFieldManager</a></td>
+<td class="t_cell">tfm</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">onClose</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><br><br><a name="xmi_153"></a><table width="500" cellspacing="1" cellpadding="2" border="0">
+<tr>
+<td class="ClassTableHeader" width="200"><b>SpaceLayer</b></td>
+<td class="ClassTableHeader" width="150">
+        class
+      </td>
+</tr>
+</table>
+
+    Implements: 
+
+    <a href="p_xmi_116.html#xmi_133">FieldAnimator</a><br><b>Attributes</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Type</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">myRandom</td>
+<td class="t_cell">Random
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">SPACE_EXTENT</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">ASTEROID_COUNT</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">UP</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">DOWN</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">LEFT</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">RIGHT</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myViewportWidth</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myViewportHeight</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myInvokeLaterId</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myTimeIncrement</td>
+<td class="t_cell">long
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myFrameRunner</td>
+<td class="t_cell"><a href="p_xmi_116.html#xmi_32">FrameRunner</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySprite</td>
+<td class="t_cell"><a href="p_xmi_50.html#xmi_51">RimSprite</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySpriteType</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myCornerX</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myCornerY</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myDirection</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySpeed</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myCurrentBitmap</td>
+<td class="t_cell">Bitmap
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myBitmap0</td>
+<td class="t_cell">Bitmap
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myBitmap1</td>
+<td class="t_cell">Bitmap
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myBitmapField</td>
+<td class="t_cell">BitmapField
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myStarField</td>
+<td class="t_cell">int[]
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myAsteroids</td>
+<td class="t_cell">int[]
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySpaceships</td>
+<td class="t_cell">Hashtable
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySpaceWidth</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySpaceHeight</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><b>Operations</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Parameters</td>
+<td class="tableheader">Returns</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">getNextBitmap</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">Bitmap
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">SpaceLayer</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">viewportWidth</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">viewportHeight</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getRandomInt</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">upper</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">setAlienShip</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">name</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">text</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getPosition</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">String
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getField</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">Field
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">frameAdvance</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">play</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">pause</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">stop</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">setTimeIncrementMillis</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">long</td>
+<td class="t_cell">timeIncrement</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">move</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">direction</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">keyChar</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">char</td>
+<td class="t_cell">key</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">status</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">time</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">navigationMovement</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">dx</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">dy</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">status</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">time</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><br><br><a name="xmi_316"></a><table width="500" cellspacing="1" cellpadding="2" border="0">
+<tr>
+<td class="ClassTableHeader" width="200"><b>Spaceship</b></td>
+<td class="ClassTableHeader" width="150">
+        class
+      </td>
+</tr>
+</table><b>Attributes</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Type</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">SPACESHIP_IMAGES</td>
+<td class="t_cell">String[]
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">FRAME_SEQUENCE</td>
+<td class="t_cell">int[]
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">FLAME_FRAME_SEQUENCE</td>
+<td class="t_cell">int[]
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">theSprites</td>
+<td class="t_cell">RimSprite[]
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">theTweetField</td>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_19">TweetField</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myName</td>
+<td class="t_cell">String
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySprite</td>
+<td class="t_cell"><a href="p_xmi_50.html#xmi_51">RimSprite</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myMessage</td>
+<td class="t_cell">String
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myX</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myY</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><b>Operations</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Parameters</td>
+<td class="tableheader">Returns</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">setTweetField</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_19">TweetField</a></td>
+<td class="t_cell">field</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getSprite</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">id</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell"><a href="p_xmi_50.html#xmi_51">RimSprite</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getSprite</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">idStr</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell"><a href="p_xmi_50.html#xmi_51">RimSprite</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">clear</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">Spaceship</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">name</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">tweet</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">update</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">tweet</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getX</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getY</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getSprite</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell"><a href="p_xmi_50.html#xmi_51">RimSprite</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getMessage</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">String
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">postMessage</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><br><br><a name="xmi_19"></a><table width="500" cellspacing="1" cellpadding="2" border="0">
+<tr>
+<td class="ClassTableHeader" width="200"><b>TweetField</b></td>
+<td class="ClassTableHeader" width="150">
+        class
+      </td>
+</tr>
+</table>    
+
+    Inherits from: 
+
+    EditField<br>
+
+    Implements: 
+
+    <a href="p_xmi_116.html#xmi_100">MessageField</a>,  Runnable<br><b>Attributes</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Type</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">myCursorPosition</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySentPosition</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myLabelLength</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myNewLogin</td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySendString</td>
+<td class="t_cell">String
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myUpdateMessage</td>
+<td class="t_cell">String
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySpaceLayer</td>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_153">SpaceLayer</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myUpdateDisplay</td>
+<td class="t_cell">Runnable
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><b>Operations</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Parameters</td>
+<td class="tableheader">Returns</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">onFocus</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">direction</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">protected</td>
+</tr>
+<tr>
+<td class="t_cell">onUnfocus</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">protected</td>
+</tr>
+<tr>
+<td class="t_cell">TweetField</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">label</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">setSpaceLayer</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_153">SpaceLayer</a></td>
+<td class="t_cell">layer</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">keyChar</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">char</td>
+<td class="t_cell">key</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">status</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">time</td>
+</tr>
+<tr>
+<td class="t_cell">boolean</td>
+<td class="t_cell">fromManager</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">navigationMovement</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">dx</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">dy</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">status</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">time</td>
+</tr>
+<tr>
+<td class="t_cell">boolean</td>
+<td class="t_cell">fromManager</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">loginUpdated</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">username</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">displayRemoteMessage</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">name</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">message</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">sendMessage</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">run</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">requestListAddition</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">credentials</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><br><br><a name="xmi_38"></a><table width="500" cellspacing="1" cellpadding="2" border="0">
+<tr>
+<td class="ClassTableHeader" width="200"><b>TweetReader</b></td>
+<td class="ClassTableHeader" width="150">
+        class
+      </td>
+</tr>
+</table>    
+
+    Inherits from: 
+
+    TimerTask<br><b>Attributes</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Type</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">mySpaceLayer</td>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_153">SpaceLayer</a>
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">myTimer</td>
+<td class="t_cell">Timer
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mySinceId</td>
+<td class="t_cell">long
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><b>Operations</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Parameters</td>
+<td class="tableheader">Returns</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">TweetReader</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell"><a href="p_xmi_216.html#xmi_153">SpaceLayer</a></td>
+<td class="t_cell">layer</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">httpRequest</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">url</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">credentials</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">postData</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">String
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">run</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">parseJson</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">jsonStr</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><br><br></body>
+</html>

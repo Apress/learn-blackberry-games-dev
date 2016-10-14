@@ -1,0 +1,53 @@
+## RIM Java Development Environment
+# RIM Project file
+#
+# This file is generated and managed by BlackBerry developer tools.
+# It SHOULD NOT BE modified manually.
+#
+AddOn=0
+AlwaysBuild=0
+[AlxImports
+]
+AutoRestart=0
+[ClassProtection
+]
+[CustomBuildFiles
+]
+[CustomBuildRules
+]
+[DefFiles
+]
+[DependsOn
+]
+ExcludeFromBuildAll=0
+[Files
+icon\rocket_80.png
+image\space-animation.svg
+image\space-components.svg
+src\net\frogparrot\svg\Main.java
+src\net\frogparrot\svg\SvgScreen.java
+src\net\frogparrot\svggame\SvgController.java
+src\net\frogparrot\svgmovie\SvgFieldAnimator.java
+src\net\frogparrot\ui\FieldAnimator.java
+src\net\frogparrot\ui\FrameRunner.java
+]
+HaveAlxImports=0
+HaveDefs=0
+HaveImports=0
+[Icons
+icon\rocket_80.png
+]
+[ImplicitRules
+]
+[Imports
+]
+Listing=0
+Options=-quiet
+OutputFileName=svgspace
+[PackageProtection
+]
+RibbonPosition=0
+RunOnStartup=0
+StartupTier=7
+SystemModule=0
+Type=0

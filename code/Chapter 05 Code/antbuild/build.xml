@@ -1,0 +1,131 @@
+<project default="deliver">
+
+    <!-- set the project and platform properties to defaults -->
+    <property name="project.name" value="LadybugMaze"/>
+    <property file="models\7100.properties"/>
+    <!-- the app.type property is used by the build task to indicate -->
+    <!-- whether the application is a MIDlet or a RIMlet. -->
+    <!-- The value "cldc" indicates a RIMlet. -->
+    <property name="app.type" value="cldc"/>
+
+    <!-- set the configuration -->
+    <!-- these values should be changed to match your local dev environment -->
+    <!-- The ${rim.version} is read from the model properties file -->
+    <!-- (such as models\7100.properties). The ${rim.version} must correspond -->
+    <!-- to a JDE that is installed on the machine that runs this build. -->
+    <property name="jde.home" 
+        value="C:\Program Files\Research In Motion\BlackBerry JDE ${rim.version}"
+    />
+    <property name="build.root" value="C:\Carol\book\chapter05\antbuild" />
+    <property name="project.root" value="${build.root}\${project.name}" />
+    <property name="build.output" value="${project.root}\build_${model}" />
+
+    <!-- tell ant where to find the bb-ant-tools.jar -->
+    <taskdef resource="bb-ant-defs.xml"
+        classpath="C:\Carol\apache-ant-1.7.1\lib\bb-ant-tools.jar"/>
+
+    <target name="clean">
+        <!-- delete all files created by the build process -->
+        <delete dir="${build.output}"/>
+        <delete file="${jde.home}\simulator\${project.name}_${model}.cod"/>
+    </target>
+
+    <target name="clean-simulator">
+        <!-- run the cleaning script provided with the simulator -->
+        <!-- sets the simulator back to its initial state -->
+        <exec executable="${jde.home}\simulator\clean.bat"
+                dir="${jde.home}\simulator"
+        />
+        <!-- delete the application and its data from the simulator's memory -->
+        <!--<exec executable="${jde.home}\simulator\fledge.exe" 
+                dir="${build.root}\simulator-data">
+            <arg value="/app=${jde.home}\simulator\Jvm.dll"/>
+            <arg value="/handheld=${model}"/>
+            <arg value="/clear-flash"/>
+            <arg value="/shutdown-after-startup"/>
+        </exec>-->
+   </target>
+
+    <target name="setup">
+        <!-- create a build directory to hold exactly the source -->
+        <!-- and resource files for the selected device model -->
+        <echo message="creating ${build.output}\res"/>
+        <mkdir dir="${build.output}\img"/>
+        <mkdir dir="${build.output}\res"/>
+        <mkdir dir="${build.output}\src"/>
+        <mkdir dir="${build.output}\${project.name}"/>
+        <copy todir="${build.output}\src">
+            <fileset dir="${project.root}\src"/>
+        </copy>
+        <copy file="${project.root}\icon\${project.name}_icon_${size.icon}.png"
+              tofile="${build.output}\img\${project.name}_icon.png"
+        />
+        <copy todir="${build.output}\img">
+            <fileset dir="${project.root}\img\${size.screen}"/>
+        </copy>
+        <copy todir="${build.output}\res">
+            <fileset dir="${project.root}\res"/>
+        </copy>
+    </target>
+
+    <target name="build" depends="setup">
+        <rapc destdir="${build.output}\${project.name}" 
+              output="${project.name}_${model}"
+              srcdir="${build.output}">
+            <jdp type="${app.type}"
+                 vendor="frog-parrot"
+                 version="1.0"
+                 description="a maze game"
+                 title="${project.name}"
+                 icon="../img/${project.name}_icon.png"
+            />
+            <define tag="RIM_${rim.version}"/>
+            <define tag="SCREEN_${size.screen}"/>
+        </rapc>
+    </target>
+
+   <target name="deliver" depends="clean, build">
+        <echo message="about to sign ${build.output}\${project.name}\${project.name}_${model}.cod"/>
+        <!-- use the jdehome attribute with the sigtool task if only one JDE installation -->
+        <!-- has the signing credential files installed -->
+        <!-- <sigtool jdehome="C:\Program Files\Research In Motion\BlackBerry JDE 4.6.1" -->
+        <sigtool 
+                 codfile="${build.output}\${project.name}\${project.name}_${model}.cod"
+                 password="***your*password***" />
+        <mkdir dir="${build.root}\release\${project.name}_${model}_${rim.version}"/>
+        <echo file="${build.root}\release\${project.name}_${model}_${rim.version}\devices.txt" message="${devices}" />
+        <copy file="${build.output}\${project.name}\${project.name}_${model}.cod"
+            tofile="${build.root}\release\${project.name}_${model}_${rim.version}\${project.name}_${model}.cod"
+        />
+        <copy file="${build.output}\${project.name}\${project.name}_${model}.cod"
+            tofile="${jde.home}\simulator\${project.name}_${model}.cod"
+        />
+    </target>
+
+    <target name="run">
+        <!-- run the application on the simulator -->
+        <mkdir dir="${build.root}\simulator-data"/>
+        <exec executable="${jde.home}\simulator\fledge.exe" 
+                dir="${build.root}\simulator-data"
+                output="${build.root}\simulator-data\${project.name}-log.txt">
+            <arg value="/app=${jde.home}\simulator\Jvm.dll"/>
+            <arg value="/handheld=${model}"/>
+            <arg value="/app-param=DisableRegistration"/>
+            <arg value="/app-param=JvmAlxConfigFile:${model}.xml"/>
+            <arg value="/pin=0x2100000A"/>
+            <!-- without this line the app is saved in the simulator's flash -->
+            <!-- <arg value="/no-save-flash"/> -->
+        </exec>
+    </target>
+
+   <target name="load">
+        <!-- install the application onto a BlackBerry device -->
+        <!-- connected to the USB port -->
+        <exec executable="${jde.home}\bin\JavaLoader.exe">
+            <arg value="-u"/>
+            <arg value="load"/>
+            <arg value="${build.root}\release\${project.name}_${model}_${rim.version}\${project.name}_${model}.cod"/>
+        </exec>
+    </target>
+
+</project>

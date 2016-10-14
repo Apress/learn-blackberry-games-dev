@@ -1,0 +1,9 @@
+MIDlet-Name: smscheckers
+MIDlet-Version: 0.0
+MIDlet-Vendor: <unknown>
+MIDlet-Jar-URL: smscheckers.jar
+MIDlet-Jar-Size: 0
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: ,img/black_king_48.png,net.frogparrot.smscheckers.Main
+RIM-MIDlet-Flags-1: 0

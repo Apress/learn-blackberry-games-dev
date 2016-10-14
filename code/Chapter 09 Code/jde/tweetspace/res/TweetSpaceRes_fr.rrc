@@ -1,0 +1,11 @@
+TWEETSPACE_CANCEL # 0 = "Annuler";
+TWEETSPACE_LISTNAME # 0 = "fr01";
+TWEETSPACE_LOGIN # 0 = "Connexion";
+TWEETSPACE_LOGIN_ERROR#0="\nErreur de validation utilisateur, s'il vous plaît donner des informations d'identification valides.\n";
+TWEETSPACE_OK # 0 = "OK";
+TWEETSPACE_PASSWORD # 0 = "Mot de passe:";
+TWEETSPACE_SIGNIN # 0 = "Connexion à Twitter";
+TWEETSPACE_TWEETSPACE # 0 = "Tweet Space!";
+TWEETSPACE_UPD_LOGIN # 0 = "Changer le nom d'utilisateur";
+TWEETSPACE_USERNAME # 0 = "Nom d'utilisateur:";
+TWEETSPACE_WARNING # 0 = "** Vous devez créer un compte Twitter pour ce jeu (voir: http://twitter.com). Ce jeu envoie fréquemment votre emplacement vaisseau spatial par Twitter, il est donc préférable de créer un nouveau compte pour ce jeu . ** ";

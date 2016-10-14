@@ -1,0 +1,10 @@
+package net.frogparrot.maze;
+
+originalLocale en;
+
+MAZE_NEWMAZE#0=1;
+MAZE_SELECTSIZE#0=2;
+MAZE_COLWIDTH#0=3;
+MAZE_NUMCOLS#0=4;
+MAZE_GOODBYE#0=5;
+MAZE_CONGRATS#0=6;

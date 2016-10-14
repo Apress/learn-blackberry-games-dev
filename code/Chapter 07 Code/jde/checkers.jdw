@@ -1,0 +1,11 @@
+## RIM Java Development Environment
+# RIM Workspace file
+[BuildConfigurations
+Debug
+Release
+]
+[Projects
+SmsCheckers\smscheckers.jdp
+]
+[ReleaseActiveProjects
+]
